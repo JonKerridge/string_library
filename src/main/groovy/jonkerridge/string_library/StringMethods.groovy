@@ -25,17 +25,17 @@ class StringMethods {
     return result
   }
 
-//  /**
-//   * Juxtapose swaps the first and last words in a string of words
-//   * @param s The string to be juxtaposed
-//   * @return the juxtaposed string
-//   * added in version 1.0.1
-//   */
-//  static String juxtapose ( String s){
-//    List <String> words = s.tokenize()  // splits s on white space
-//    words.swap(0, words.size()-1)
-//    String juxtaposed = ""
-//    words.each{juxtaposed = juxtaposed + "$it "}
-//    return juxtaposed
-//  }
+  /**
+   * Juxtapose swaps the first and last words in a string of words
+   * @param s The string to be juxtaposed
+   * @return the juxtaposed string
+   * added in version 1.0.1
+   */
+  static String juxtapose ( String s){
+    List <String> words = s.tokenize()  // splits s on white space
+    words.swap(0, words.size()-1)
+    String juxtaposed = ""
+    words.each{juxtaposed = juxtaposed + "$it "}
+    return juxtaposed
+  }
 }
